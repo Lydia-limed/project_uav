@@ -1,0 +1,41 @@
+{
+  "chains": {
+    "glass-chain": "snd1pppghtfgun9zjsntgh8m49asnnwu9gk8f9xf6nayayysyl0c8ln6kj6qnjv"
+  },
+  "l1": {
+    "apiaddress": "http://hornet:14265",
+    "faucetaddress": "http://inx-faucet:8091",
+    "params": {
+      "maxPayloadSize": 32498,
+      "protocol": {
+        "version": 2,
+        "networkName": "sandbox1",
+        "bech32Hrp": "snd",
+        "minPowScore": 0,
+        "belowMaxDepth": 15,
+        "rentStructure": {
+          "vByteCost": 500,
+          "vByteFactorData": 1,
+          "vByteFactorKey": 10
+        },
+        "tokenSupply": "4600000000000000"
+      },
+      "baseToken": {
+        "name": "SandCoin",
+        "tickerSymbol": "SAND",
+        "unit": "SAND",
+        "subunit": "silt",
+        "decimals": 6,
+        "useMetricPrefix": false
+      }
+    },
+    "timestamp": "2025-02-04T11:46:08.005659048Z"
+  },
+  "wallet": {
+    "provider": "unsafe_inmemory_testing_seed",
+    "testing_seed": "0xf3bdf3ad8f401d1a2857d0eca48e440e600b6ff418db5cff80c5a7683c13215f17c992a74a2e5a2af9de651e2afba8e0c4ccfc817b51d452098cd388655d7d83"
+  },
+  "wasp": {
+    "mr-glass": "http://wasp:9090"
+  }
+}

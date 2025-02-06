@@ -1,0 +1,38 @@
+# 📦 Ignorer les dépendances Node.js
+node_modules/
+npm-debug.log*
+yarn-error.log
+package-lock.json
+pnpm-lock.yaml
+
+# 🔍 Ignorer les fichiers d'environnement sensibles
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.DS_Store
+
+# 🐳 Ignorer les fichiers liés à Docker
+docker-compose.override.yml
+.dockerignore
+Dockerfile*
+
+# 🚀 Ignorer les fichiers de build
+dist/
+build/
+.next/
+out/
+coverage/
+.cache/
+
+# 💻 Ignorer les fichiers de l'éditeur (VSCode, IntelliJ, etc.)
+.vscode/
+.idea/
+*.iml
+
+# 🗑 Ignorer les fichiers temporaires
+*.log
+*.tmp
+*.swp
+.nyc_output/

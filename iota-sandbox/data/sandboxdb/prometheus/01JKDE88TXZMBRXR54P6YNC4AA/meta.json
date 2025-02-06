@@ -1,0 +1,17 @@
+{
+	"ulid": "01JKDE88TXZMBRXR54P6YNC4AA",
+	"minTime": 1738764000578,
+	"maxTime": 1738771200000,
+	"stats": {
+		"numSamples": 1415401,
+		"numSeries": 1998,
+		"numChunks": 11990
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JKDE88TXZMBRXR54P6YNC4AA"
+		]
+	},
+	"version": 1
+}

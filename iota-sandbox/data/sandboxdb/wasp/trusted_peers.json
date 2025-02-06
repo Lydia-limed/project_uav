@@ -1,0 +1,9 @@
+{
+  "trustedPeers": [
+    {
+      "name": "me",
+      "publicKey": "0x8c649035ea680b0184815349a802dd8d218cb3bb3a9bd1a80453fb9359253682",
+      "peeringURL": "0.0.0.0:4000"
+    }
+  ]
+}

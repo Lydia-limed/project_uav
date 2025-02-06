@@ -1,0 +1,12 @@
+[
+    {
+        "id": 0,
+        "text": "Sandnet EVM",
+        "apiEndpoint": "http://localhost:80",
+        "faucetEndpoint": "http://localhost:80/faucet",
+        "chainAddress": "",
+        "chainID": 777,
+        "blockExplorer": "",
+        "networkUrl": "http://localhost:80/wasp/api/v1/chains//evm"
+    }
+]
