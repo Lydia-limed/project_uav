@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json",
     "type": "app",
-    "name": "Explore Profiles",
+    "name": "Grafana Profiles Drilldown",
     "id": "grafana-pyroscope-app",
     "autoEnabled": true,
     "backend": false,
     "preload": true,
     "dependencies": {
-        "grafanaDependency": ">=11.3.2",
+        "grafanaDependency": ">=11.5.0",
         "plugins": []
     },
     "info": {
@@ -17,7 +17,8 @@
             "profiling",
             "explore",
             "profiles",
-            "performance"
+            "performance",
+            "drilldown"
         ],
         "description": "Continuous profiling service powered by Grafana Pyroscope",
         "author": {
@@ -33,8 +34,8 @@
                 "path": "img/hero-image.png"
             }
         ],
-        "version": "0.1.19",
-        "updated": "2025-01-29",
+        "version": "1.1.0",
+        "updated": "2025-02-21",
         "links": [
             {
                 "name": "GitHub",
@@ -49,30 +50,22 @@
     "includes": [
         {
             "type": "page",
-            "name": "Explore profiles",
-            "path": "/a/grafana-pyroscope-app/profiles-explorer",
-            "role": "Viewer",
+            "name": "Profiles",
+            "path": "/a/grafana-pyroscope-app/explore",
+            "action": "datasources:explore",
             "addToNav": true,
-            "defaultNav": false
-        },
-        {
-            "type": "page",
-            "name": "Ad hoc view",
-            "path": "/a/grafana-pyroscope-app/ad-hoc",
-            "role": "Viewer",
-            "addToNav": true,
-            "defaultNav": false
+            "defaultNav": true
         }
     ],
     "extensions": {
         "extensionPoints": [
             {
-                "id": "grafana-pyroscope-app/exploration/v1"
+                "id": "grafana-pyroscope-app/investigation/v1"
             }
         ],
         "addedLinks": [
             {
-                "title": "Open in Explore Profiles",
+                "title": "Open in Grafana Profiles Drilldown",
                 "description": "Try our new queryless experience for profiles",
                 "targets": [
                     "grafana/explore/toolbar/action"

@@ -1,3 +1,84 @@
+# [1.1.0](https://github.com/grafana/explore-profiles/compare/v1.0.0...v1.1.0) (2025-02-21)
+
+
+### Bug Fixes
+
+* **Routes:** Add redirection for non-supported paths ([#427](https://github.com/grafana/explore-profiles/issues/427)) ([edd56d3](https://github.com/grafana/explore-profiles/commit/edd56d34cb40dfc8bfbaba6788c6c04f46d571b2))
+
+
+### Features
+
+* **investigations:** adapt to changed plugin id ([#429](https://github.com/grafana/explore-profiles/issues/429)) ([7b41af9](https://github.com/grafana/explore-profiles/commit/7b41af95c9a938d05c008017b5546a5aab319531))
+* Rename Explore Profiles to Grafana Profiles Drilldown ([#430](https://github.com/grafana/explore-profiles/issues/430)) ([e91ff90](https://github.com/grafana/explore-profiles/commit/e91ff90cf697070be37b2140d3318ea4135db7f4)), closes [#432](https://github.com/grafana/explore-profiles/issues/432)
+
+
+
+# [1.0.0](https://github.com/grafana/explore-profiles/compare/v0.1.23...v1.0.0) (2025-02-14)
+
+
+### Features
+
+* **App:** Changes for GA ([#398](https://github.com/grafana/explore-profiles/issues/398)) ([71ed3f8](https://github.com/grafana/explore-profiles/commit/71ed3f8d312317474ffec674d056968f3fefad64))
+
+
+
+## [0.1.23](https://github.com/grafana/explore-profiles/compare/v0.1.22...v0.1.23) (2025-02-14)
+
+
+### Bug Fixes
+
+* Remove lazy loading of page components ([#422](https://github.com/grafana/explore-profiles/issues/422)) ([45bc71e](https://github.com/grafana/explore-profiles/commit/45bc71e27ac8306d735c980b3436b61889f522d9))
+
+
+
+## [0.1.22](https://github.com/grafana/explore-profiles/compare/v0.1.21...v0.1.22) (2025-02-13)
+
+
+### Bug Fixes
+
+* **FlameGraph:** Always render an error message when loading fails ([#407](https://github.com/grafana/explore-profiles/issues/407)) ([c531bf2](https://github.com/grafana/explore-profiles/commit/c531bf2296ac75da8938ce6af1ec1660dd6e7b73))
+
+
+### Features
+
+* **Tracking:** Add page view tracking ([#408](https://github.com/grafana/explore-profiles/issues/408)) ([cf5b786](https://github.com/grafana/explore-profiles/commit/cf5b786ada6e211af2385192b9f8059906f935f5))
+
+
+
+## [0.1.21](https://github.com/grafana/explore-profiles/compare/v0.1.20...v0.1.21) (2025-02-12)
+
+
+### Bug Fixes
+
+* **Faro:** Narrow down frontend logging to plugin URL ([#395](https://github.com/grafana/explore-profiles/issues/395)) ([8d011ce](https://github.com/grafana/explore-profiles/commit/8d011cedab660fe23b0711b303ef3fe450b78614))
+
+
+
+## [0.1.20](https://github.com/grafana/explore-profiles/compare/v0.1.19...v0.1.20) (2025-02-06)
+
+
+### Bug Fixes
+
+* **Filters:** Ensure filters are always cleared when changing the data source or the service ([#374](https://github.com/grafana/explore-profiles/issues/374)) ([1c7b6c3](https://github.com/grafana/explore-profiles/commit/1c7b6c3f537b9ff0bc9060bac5f0e2c240ba00c8))
+* **FunctionDetailsPanel:** Fix start ellipsis for file names containing non-alpha chars ([#373](https://github.com/grafana/explore-profiles/issues/373)) ([f79a1b7](https://github.com/grafana/explore-profiles/commit/f79a1b7628d8dd0bfd478122a0296dd2a1c72948))
+* **GitHubIntegration:** Handle function details for inlining ([#347](https://github.com/grafana/explore-profiles/issues/347)) ([5e28b3c](https://github.com/grafana/explore-profiles/commit/5e28b3c0e571f254915d08e0a166a66d33ff240b))
+* **Grid:** Fix error message display ([#359](https://github.com/grafana/explore-profiles/issues/359)) ([1ca4ff2](https://github.com/grafana/explore-profiles/commit/1ca4ff2795cfa8118ec9e0d12dcad4b04d336534))
+* **Settings:** Prevent warning to be displayed when no settings is returned by the Settings API ([#384](https://github.com/grafana/explore-profiles/issues/384)) ([cdce58a](https://github.com/grafana/explore-profiles/commit/cdce58a48bad24be1cf64ed81658bbcd0afca521))
+
+
+### Features
+
+* **AdHocView:** Remove Grafana menu item to the Ad Hoc view ([#385](https://github.com/grafana/explore-profiles/issues/385)) ([5c265fb](https://github.com/grafana/explore-profiles/commit/5c265fb4b5273083b6150aad46d32a6f44027fda))
+* **LabelsView:** Add maxima visualizations ([#361](https://github.com/grafana/explore-profiles/issues/361)) ([25095c6](https://github.com/grafana/explore-profiles/commit/25095c6882d17ba6d88e7f5f861d5560e112a930))
+* **LabelsView:** update main time series when a "group by" label is selected ([#341](https://github.com/grafana/explore-profiles/issues/341)) ([775b37d](https://github.com/grafana/explore-profiles/commit/775b37dc6ef9433b3f5674f56869a37a16892871))
+
+
+### Performance Improvements
+
+* **Series:** Limit the number of series request by breakdown charts ([#219](https://github.com/grafana/explore-profiles/issues/219)) ([8e1161d](https://github.com/grafana/explore-profiles/commit/8e1161df84283eecadc8aa9da55e46eb401a1e8c))
+
+
+
 ## [0.1.19](https://github.com/grafana/explore-profiles/compare/v0.1.18...v0.1.19) (2025-01-27)
 
 

@@ -1,6 +1,6 @@
 {
   "chains": {
-    "glass-chain": "snd1pppghtfgun9zjsntgh8m49asnnwu9gk8f9xf6nayayysyl0c8ln6kj6qnjv"
+    "glass-chain": "snd1pr98aupvzqpctrx4s430ea2y8z9dt2d0h6a8ujlgrr5yewu6q55twcmy3gx"
   },
   "l1": {
     "apiaddress": "http://hornet:14265",
@@ -29,7 +29,7 @@
         "useMetricPrefix": false
       }
     },
-    "timestamp": "2025-02-04T11:46:08.005659048Z"
+    "timestamp": "2025-02-18T10:09:56.712122501Z"
   },
   "wallet": {
     "provider": "unsafe_inmemory_testing_seed",

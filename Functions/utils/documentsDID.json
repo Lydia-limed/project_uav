@@ -1,0 +1,1048 @@
+{
+  "did:iota:snd:0xea70f7f226eb52937e0c1bd984e6f2bd815c0fbe462ddb048e5393401cb9dd56": {
+    "id": "did:iota:snd:0xea70f7f226eb52937e0c1bd984e6f2bd815c0fbe462ddb048e5393401cb9dd56",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xea70f7f226eb52937e0c1bd984e6f2bd815c0fbe462ddb048e5393401cb9dd56#key-1",
+        "controller": "did:iota:snd:0xea70f7f226eb52937e0c1bd984e6f2bd815c0fbe462ddb048e5393401cb9dd56",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "bx-rAVwqxw_6aeIrUPdly1jBhq7RPQTy1fDct80moJo"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x475863b522304bb6c7d63a86323d53472cee144547275ea18ae876156cfd302e": {
+    "id": "did:iota:snd:0x475863b522304bb6c7d63a86323d53472cee144547275ea18ae876156cfd302e",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x475863b522304bb6c7d63a86323d53472cee144547275ea18ae876156cfd302e#key-1",
+        "controller": "did:iota:snd:0x475863b522304bb6c7d63a86323d53472cee144547275ea18ae876156cfd302e",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "-WCIr5EYKL9CWK09F35AHS2F_1CuJ2_4wJfqai_QS2w"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xf3bd5cd866c5df2c21f152e4cad8b7f3f4f2dfe118761466ce68c91d1c696cef": {
+    "id": "did:iota:snd:0xf3bd5cd866c5df2c21f152e4cad8b7f3f4f2dfe118761466ce68c91d1c696cef",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xf3bd5cd866c5df2c21f152e4cad8b7f3f4f2dfe118761466ce68c91d1c696cef#key-1",
+        "controller": "did:iota:snd:0xf3bd5cd866c5df2c21f152e4cad8b7f3f4f2dfe118761466ce68c91d1c696cef",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Sl8ZPwbS3gXiHCGhlhJ44pbIv4UEGoiJS3-Sh8Hrqb4"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x84b76c9765b2c97efef93974cdce7636d0b6d9ec574e3f75a3ced578b0320df1": {
+    "id": "did:iota:snd:0x84b76c9765b2c97efef93974cdce7636d0b6d9ec574e3f75a3ced578b0320df1",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x84b76c9765b2c97efef93974cdce7636d0b6d9ec574e3f75a3ced578b0320df1#key-1",
+        "controller": "did:iota:snd:0x84b76c9765b2c97efef93974cdce7636d0b6d9ec574e3f75a3ced578b0320df1",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "IuiQHwmFtjGztMLGhgGOV8O7PpFAHPB5Gaj4qeW4PUA"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xec7971327ae7984efc43d6af29093f523bfbd55ebc8a58d71b58a4f80ca0d7de": {
+    "id": "did:iota:snd:0xec7971327ae7984efc43d6af29093f523bfbd55ebc8a58d71b58a4f80ca0d7de",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xec7971327ae7984efc43d6af29093f523bfbd55ebc8a58d71b58a4f80ca0d7de#key-1",
+        "controller": "did:iota:snd:0xec7971327ae7984efc43d6af29093f523bfbd55ebc8a58d71b58a4f80ca0d7de",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "8-6g4-tPSwocMNLk6K93K46JGOQ77lCsRO7CMssLKlA"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xd7ca142c588f8c991be3003d2d15f446cff3c806c79494c8acc8122a6a9693af": {
+    "id": "did:iota:snd:0xd7ca142c588f8c991be3003d2d15f446cff3c806c79494c8acc8122a6a9693af",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xd7ca142c588f8c991be3003d2d15f446cff3c806c79494c8acc8122a6a9693af#key-1",
+        "controller": "did:iota:snd:0xd7ca142c588f8c991be3003d2d15f446cff3c806c79494c8acc8122a6a9693af",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "tOHKP_SWM7X1Smh4aRb0oFVaMtOJ2GUvZ5w-jTEyXfw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x70df92e34cffa4e528e8ff1d9a2be7ee681f6feb7825f5ce8e3180c626de91b0": {
+    "id": "did:iota:snd:0x70df92e34cffa4e528e8ff1d9a2be7ee681f6feb7825f5ce8e3180c626de91b0"
+  },
+  "did:iota:snd:0xca0a9c7fc68fdb91d3f341122418f76188aada941a9a1a4801422fc1181a6b84": {
+    "id": "did:iota:snd:0xca0a9c7fc68fdb91d3f341122418f76188aada941a9a1a4801422fc1181a6b84",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xca0a9c7fc68fdb91d3f341122418f76188aada941a9a1a4801422fc1181a6b84#key-1",
+        "controller": "did:iota:snd:0xca0a9c7fc68fdb91d3f341122418f76188aada941a9a1a4801422fc1181a6b84",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "hxXktcy6fLSSLWoE5M55TeY7YJ2ZKfb4rF2ZTw-oKpw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xe91d38c54483790765fb6bbff5ee060f8dc3fb30adea8324cf523ffd11dc90da": {
+    "id": "did:iota:snd:0xe91d38c54483790765fb6bbff5ee060f8dc3fb30adea8324cf523ffd11dc90da",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xe91d38c54483790765fb6bbff5ee060f8dc3fb30adea8324cf523ffd11dc90da#key-1",
+        "controller": "did:iota:snd:0xe91d38c54483790765fb6bbff5ee060f8dc3fb30adea8324cf523ffd11dc90da",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "GPbXgX-al35lXMcpQNBd6kPK3I-zItReL-_46tvzq6k"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xfdd47167f245bb8f2d91182abc6129297580ea36f6fe2cbabbd625cfe3463f5e": {
+    "id": "did:iota:snd:0xfdd47167f245bb8f2d91182abc6129297580ea36f6fe2cbabbd625cfe3463f5e",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xfdd47167f245bb8f2d91182abc6129297580ea36f6fe2cbabbd625cfe3463f5e#key-1",
+        "controller": "did:iota:snd:0xfdd47167f245bb8f2d91182abc6129297580ea36f6fe2cbabbd625cfe3463f5e",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "UlvuN8lMQ4-zjhIbw0haY0up6Mm93Fp9lMTw48BvGdU"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x9625cf765aecc9ce9b2d60513e766ca43f71331422513e29b9c3a0e0915a7fce": {
+    "id": "did:iota:snd:0x9625cf765aecc9ce9b2d60513e766ca43f71331422513e29b9c3a0e0915a7fce"
+  },
+  "did:iota:snd:0x1a88e1ff7386ce80b61134956a0d8feff4287bd18d8b20a38b0efdcb4be28f78": {
+    "id": "did:iota:snd:0x1a88e1ff7386ce80b61134956a0d8feff4287bd18d8b20a38b0efdcb4be28f78",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x1a88e1ff7386ce80b61134956a0d8feff4287bd18d8b20a38b0efdcb4be28f78#key-1",
+        "controller": "did:iota:snd:0x1a88e1ff7386ce80b61134956a0d8feff4287bd18d8b20a38b0efdcb4be28f78",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "IOaXa3ZoQ-dIWRpdQPqzJa-0ykUqZmdUdDRmkZJb4XE"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x34480b5e58a202171e9b9c34ab40006a82bef6a70e89bb36d14a0e66b0f86601": {
+    "id": "did:iota:snd:0x34480b5e58a202171e9b9c34ab40006a82bef6a70e89bb36d14a0e66b0f86601",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x34480b5e58a202171e9b9c34ab40006a82bef6a70e89bb36d14a0e66b0f86601#key-1",
+        "controller": "did:iota:snd:0x34480b5e58a202171e9b9c34ab40006a82bef6a70e89bb36d14a0e66b0f86601",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "25aTMhIyiKvfN5S3Jum9XFPj0AhsHDjoaI8LZjVk3ug"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xfba0293362a9a99088a60b1ab256e6308fcd972e31d78be275e7543c6ffcb663": {
+    "id": "did:iota:snd:0xfba0293362a9a99088a60b1ab256e6308fcd972e31d78be275e7543c6ffcb663",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xfba0293362a9a99088a60b1ab256e6308fcd972e31d78be275e7543c6ffcb663#key-1",
+        "controller": "did:iota:snd:0xfba0293362a9a99088a60b1ab256e6308fcd972e31d78be275e7543c6ffcb663",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "CQC3ZqccqdsHUCKzQ6bOe-_d94I9XqG9kaZXwdfFRJE"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x1d3893b701cb394b98f97507ac9d4d1f9fc77d0d027f575d723cb904865d8df6": {
+    "id": "did:iota:snd:0x1d3893b701cb394b98f97507ac9d4d1f9fc77d0d027f575d723cb904865d8df6",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x1d3893b701cb394b98f97507ac9d4d1f9fc77d0d027f575d723cb904865d8df6#key-1",
+        "controller": "did:iota:snd:0x1d3893b701cb394b98f97507ac9d4d1f9fc77d0d027f575d723cb904865d8df6",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "JALDbDV9vzbVOYXBotqQUKd1XBkj-KYOo2IAble3ji8"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x99ed62af5d9d4cae2a6dc64c2515df2893bfc8cfee9696784d76cb22e136ef94": {
+    "id": "did:iota:snd:0x99ed62af5d9d4cae2a6dc64c2515df2893bfc8cfee9696784d76cb22e136ef94",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x99ed62af5d9d4cae2a6dc64c2515df2893bfc8cfee9696784d76cb22e136ef94#key-1",
+        "controller": "did:iota:snd:0x99ed62af5d9d4cae2a6dc64c2515df2893bfc8cfee9696784d76cb22e136ef94",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "PEpQuA-PwXV91QkcQFiDVpP5tgRNcVxMI9Ua5UTNoUI"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xf8eed77d348b29698bd973945e7111b0e1c361664441f3b7bc10b27246866209": {
+    "id": "did:iota:snd:0xf8eed77d348b29698bd973945e7111b0e1c361664441f3b7bc10b27246866209",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xf8eed77d348b29698bd973945e7111b0e1c361664441f3b7bc10b27246866209#key-1",
+        "controller": "did:iota:snd:0xf8eed77d348b29698bd973945e7111b0e1c361664441f3b7bc10b27246866209",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "ZmhQwbc9A15cIzUA1kY4Wlgk42MJwztpUgNXqw66EbI"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xfbc9791d41377890a5893b72b2738c7580ffbcb5e6a13e7ecbab42bdce275ee9": {
+    "id": "did:iota:snd:0xfbc9791d41377890a5893b72b2738c7580ffbcb5e6a13e7ecbab42bdce275ee9",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xfbc9791d41377890a5893b72b2738c7580ffbcb5e6a13e7ecbab42bdce275ee9#key-1",
+        "controller": "did:iota:snd:0xfbc9791d41377890a5893b72b2738c7580ffbcb5e6a13e7ecbab42bdce275ee9",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "m7LhDlNIz7vamjhxtpuhrW9rh4OpnnYewcwEXvgwmP0"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xe22e647abfd882659765f8aff6ec9d4594e19da15c7dd1f8f981fde750b69f1b": {
+    "id": "did:iota:snd:0xe22e647abfd882659765f8aff6ec9d4594e19da15c7dd1f8f981fde750b69f1b",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xe22e647abfd882659765f8aff6ec9d4594e19da15c7dd1f8f981fde750b69f1b#key-1",
+        "controller": "did:iota:snd:0xe22e647abfd882659765f8aff6ec9d4594e19da15c7dd1f8f981fde750b69f1b",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "QNVIHTVi5wgxoCSP-cH9oibawVKt1NQDONvDehwItaI"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xdf1dc8b89b9d79a1e815afac4c0623e1b5b12396cfb7d6d8a777d32c53d928a3": {
+    "id": "did:iota:snd:0xdf1dc8b89b9d79a1e815afac4c0623e1b5b12396cfb7d6d8a777d32c53d928a3",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xdf1dc8b89b9d79a1e815afac4c0623e1b5b12396cfb7d6d8a777d32c53d928a3#key-1",
+        "controller": "did:iota:snd:0xdf1dc8b89b9d79a1e815afac4c0623e1b5b12396cfb7d6d8a777d32c53d928a3",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Oe0Fxaw30oCa5VSnN0kMApkmPX0oXATcn7l1V5TCf-o"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x218b89852812a3442db9147a7680a1534abb76c513969364bae200a929d4b7e8": {
+    "id": "did:iota:snd:0x218b89852812a3442db9147a7680a1534abb76c513969364bae200a929d4b7e8",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x218b89852812a3442db9147a7680a1534abb76c513969364bae200a929d4b7e8#key-1",
+        "controller": "did:iota:snd:0x218b89852812a3442db9147a7680a1534abb76c513969364bae200a929d4b7e8",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "fldC8DoWEQTUHOULJ_tN5EXW71y7lGAKfT_GWS9_pec"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x1cf3e3356fd7bf5e3843de62b287a60d67b0a12c334ebf9debd8c81992926e08": {
+    "id": "did:iota:snd:0x1cf3e3356fd7bf5e3843de62b287a60d67b0a12c334ebf9debd8c81992926e08",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x1cf3e3356fd7bf5e3843de62b287a60d67b0a12c334ebf9debd8c81992926e08#key-1",
+        "controller": "did:iota:snd:0x1cf3e3356fd7bf5e3843de62b287a60d67b0a12c334ebf9debd8c81992926e08",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "yctwHDU077Ul1DbGM79arYGVafQEcVBJqNh4SfpTCjg"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x8563431e5fd6235310bbe8781e327b6033aea6d5bfd90b4e5b621ed9c935cda1": {
+    "id": "did:iota:snd:0x8563431e5fd6235310bbe8781e327b6033aea6d5bfd90b4e5b621ed9c935cda1",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x8563431e5fd6235310bbe8781e327b6033aea6d5bfd90b4e5b621ed9c935cda1#key-1",
+        "controller": "did:iota:snd:0x8563431e5fd6235310bbe8781e327b6033aea6d5bfd90b4e5b621ed9c935cda1",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Ix6iGe_E-YhMknlZlpmsdLIYmzG1gxRaWPkIiF3wEws"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x44e90982e93f19a6a767601f844c85f34c300a94ba13cdd726472abd334f41c5": {
+    "id": "did:iota:snd:0x44e90982e93f19a6a767601f844c85f34c300a94ba13cdd726472abd334f41c5",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x44e90982e93f19a6a767601f844c85f34c300a94ba13cdd726472abd334f41c5#key-1",
+        "controller": "did:iota:snd:0x44e90982e93f19a6a767601f844c85f34c300a94ba13cdd726472abd334f41c5",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "qdjHI7ehCJ0WHjnK8zZDU8OwhY0omyDBgf5BX1pLbO0"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xa505150d5adb90a9ca429393ff84aec021b6bc40e5198365c137827be12716a4": {
+    "id": "did:iota:snd:0xa505150d5adb90a9ca429393ff84aec021b6bc40e5198365c137827be12716a4",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xa505150d5adb90a9ca429393ff84aec021b6bc40e5198365c137827be12716a4#key-1",
+        "controller": "did:iota:snd:0xa505150d5adb90a9ca429393ff84aec021b6bc40e5198365c137827be12716a4",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Fz_I_sLzUc_yZ_spXEaBgL0AGpqDCddKzqOFYaU0jdE"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xad7dde8706c102c3527de7eedaf7751d43ac9696818779e457e0a577d5b06c2f": {
+    "id": "did:iota:snd:0xad7dde8706c102c3527de7eedaf7751d43ac9696818779e457e0a577d5b06c2f",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xad7dde8706c102c3527de7eedaf7751d43ac9696818779e457e0a577d5b06c2f#key-1",
+        "controller": "did:iota:snd:0xad7dde8706c102c3527de7eedaf7751d43ac9696818779e457e0a577d5b06c2f",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "bCTNXQNqwAmYDCJ6ZrJPZw2tV0raE-O0qmD3iBRNYZw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x4d7846523af7fd079c42d43f15ae4ff4f36afe87b64252d29893d59c273c4dd7": {
+    "id": "did:iota:snd:0x4d7846523af7fd079c42d43f15ae4ff4f36afe87b64252d29893d59c273c4dd7",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x4d7846523af7fd079c42d43f15ae4ff4f36afe87b64252d29893d59c273c4dd7#key-1",
+        "controller": "did:iota:snd:0x4d7846523af7fd079c42d43f15ae4ff4f36afe87b64252d29893d59c273c4dd7",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "CNGy2UJ8H3P2uzpus_43rrhlhEdQNJyrErP2iJLc4og"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x416cb4d9ac857fbe681cfff7508ec2eb81fef4de5c0c2ce94732b4f6685ad283": {
+    "id": "did:iota:snd:0x416cb4d9ac857fbe681cfff7508ec2eb81fef4de5c0c2ce94732b4f6685ad283",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x416cb4d9ac857fbe681cfff7508ec2eb81fef4de5c0c2ce94732b4f6685ad283#key-1",
+        "controller": "did:iota:snd:0x416cb4d9ac857fbe681cfff7508ec2eb81fef4de5c0c2ce94732b4f6685ad283",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "oCADt1-_Mszg3hIBY8OvIwp_kXGmRh-2xveJTh_Dp5Y"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x6977f33ac5dfc7a2201a6d95afba1a5eab2a30d8b0ab2c65abc9f5b00d9d5dc5": {
+    "id": "did:iota:snd:0x6977f33ac5dfc7a2201a6d95afba1a5eab2a30d8b0ab2c65abc9f5b00d9d5dc5",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x6977f33ac5dfc7a2201a6d95afba1a5eab2a30d8b0ab2c65abc9f5b00d9d5dc5#key-1",
+        "controller": "did:iota:snd:0x6977f33ac5dfc7a2201a6d95afba1a5eab2a30d8b0ab2c65abc9f5b00d9d5dc5",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "4CAwwz0lf6lamWu29I3YOQaF1tFj5trtTwJd2jlckg4"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x7bdfc5b7c812593614521d6b677229ccc7f8db40cacd2a369651736836f780bd": {
+    "id": "did:iota:snd:0x7bdfc5b7c812593614521d6b677229ccc7f8db40cacd2a369651736836f780bd",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x7bdfc5b7c812593614521d6b677229ccc7f8db40cacd2a369651736836f780bd#key-1",
+        "controller": "did:iota:snd:0x7bdfc5b7c812593614521d6b677229ccc7f8db40cacd2a369651736836f780bd",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "9dSdmTzreELszSXyib4-ik9DJ-k30AJchXThXCIUQ94"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xf83423f3f10c320b823d9c1596ca42c9da0d8398765268b6476e98975f6b3231": {
+    "id": "did:iota:snd:0xf83423f3f10c320b823d9c1596ca42c9da0d8398765268b6476e98975f6b3231",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xf83423f3f10c320b823d9c1596ca42c9da0d8398765268b6476e98975f6b3231#key-1",
+        "controller": "did:iota:snd:0xf83423f3f10c320b823d9c1596ca42c9da0d8398765268b6476e98975f6b3231",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "04yvcZujkMJ49MP-hQBZOZ5XhlwoshxOZ2P8EOR-GhQ"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xdf5dc2dc0e45734acf3e725c8bff52831eda45722672d021b17a0839b5e89b39": {
+    "id": "did:iota:snd:0xdf5dc2dc0e45734acf3e725c8bff52831eda45722672d021b17a0839b5e89b39",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xdf5dc2dc0e45734acf3e725c8bff52831eda45722672d021b17a0839b5e89b39#key-1",
+        "controller": "did:iota:snd:0xdf5dc2dc0e45734acf3e725c8bff52831eda45722672d021b17a0839b5e89b39",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "lWLJOJFuAp5imkMA6BeSZ16vvMa14Y8jAn5IxeHy8gU"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xd55b01b34f74c4fb27c64802d661253beb03ca004707e7982796ca6a7863801b": {
+    "id": "did:iota:snd:0xd55b01b34f74c4fb27c64802d661253beb03ca004707e7982796ca6a7863801b",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xd55b01b34f74c4fb27c64802d661253beb03ca004707e7982796ca6a7863801b#key-1",
+        "controller": "did:iota:snd:0xd55b01b34f74c4fb27c64802d661253beb03ca004707e7982796ca6a7863801b",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "4oPsJkeCwPlxc70008FHDiH1OJtMZDt_NT5pjYsv1cg"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x4a22715bf2637108de3ccf4de59693be6de4fd2015372f60f63675b3ba12a87b": {
+    "id": "did:iota:snd:0x4a22715bf2637108de3ccf4de59693be6de4fd2015372f60f63675b3ba12a87b",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x4a22715bf2637108de3ccf4de59693be6de4fd2015372f60f63675b3ba12a87b#key-1",
+        "controller": "did:iota:snd:0x4a22715bf2637108de3ccf4de59693be6de4fd2015372f60f63675b3ba12a87b",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "e_U57ClMCG8aGY4W3XhT62vvmOyeBygZjlVwv2WZybc"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x9a04c5b31c8b065ad5c4a6bb033b8aba43c73605322756f2343f82a4521b4f4e": {
+    "id": "did:iota:snd:0x9a04c5b31c8b065ad5c4a6bb033b8aba43c73605322756f2343f82a4521b4f4e",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x9a04c5b31c8b065ad5c4a6bb033b8aba43c73605322756f2343f82a4521b4f4e#key-1",
+        "controller": "did:iota:snd:0x9a04c5b31c8b065ad5c4a6bb033b8aba43c73605322756f2343f82a4521b4f4e",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "v9xELV0jCa2QNZ6OVN3yBU-JhlxFh5K588-9p66V7AU"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xd30d8f1376f5ee2faa545d9eb3cb3cfc255f9860620356488856d26b28636ad5": {
+    "id": "did:iota:snd:0xd30d8f1376f5ee2faa545d9eb3cb3cfc255f9860620356488856d26b28636ad5",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xd30d8f1376f5ee2faa545d9eb3cb3cfc255f9860620356488856d26b28636ad5#key-1",
+        "controller": "did:iota:snd:0xd30d8f1376f5ee2faa545d9eb3cb3cfc255f9860620356488856d26b28636ad5",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "GQ5A8gVpfT8vji5uF7aHLcCvrD9XbQJDo9oZ2Z6r29c"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xde988872ff9eef04332643e504e44ce32f8f234346eb4c406f14e85655b9fba1": {
+    "id": "did:iota:snd:0xde988872ff9eef04332643e504e44ce32f8f234346eb4c406f14e85655b9fba1",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xde988872ff9eef04332643e504e44ce32f8f234346eb4c406f14e85655b9fba1#key-1",
+        "controller": "did:iota:snd:0xde988872ff9eef04332643e504e44ce32f8f234346eb4c406f14e85655b9fba1",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "iQKr6NoRIJaNDfKX-tsvEimkxKPFLjyb0p2OexM8H0g"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x3d97f15ee28a9c7cf7c95f36572b07534040b6375893cd404db653621627ff16": {
+    "id": "did:iota:snd:0x3d97f15ee28a9c7cf7c95f36572b07534040b6375893cd404db653621627ff16",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x3d97f15ee28a9c7cf7c95f36572b07534040b6375893cd404db653621627ff16#key-1",
+        "controller": "did:iota:snd:0x3d97f15ee28a9c7cf7c95f36572b07534040b6375893cd404db653621627ff16",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "TgoRLFwJaG5YNpoCGNwV57trewJJRA3eZ7iktdXqahM"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x7fb14cefae64510b6c76653a77c2e1b566edb561450121cfc03c977b93e36d9c": {
+    "id": "did:iota:snd:0x7fb14cefae64510b6c76653a77c2e1b566edb561450121cfc03c977b93e36d9c",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x7fb14cefae64510b6c76653a77c2e1b566edb561450121cfc03c977b93e36d9c#key-1",
+        "controller": "did:iota:snd:0x7fb14cefae64510b6c76653a77c2e1b566edb561450121cfc03c977b93e36d9c",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "MnU5v18pFe5qrg1ApYFo3Xcj3jIhs8-3cY4dN2WCQxw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xc24b00c66886b951db9e0ad43903a3cccc282d308f7a5a30cf8b0dbcbb4eb5fa": {
+    "id": "did:iota:snd:0xc24b00c66886b951db9e0ad43903a3cccc282d308f7a5a30cf8b0dbcbb4eb5fa",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xc24b00c66886b951db9e0ad43903a3cccc282d308f7a5a30cf8b0dbcbb4eb5fa#key-1",
+        "controller": "did:iota:snd:0xc24b00c66886b951db9e0ad43903a3cccc282d308f7a5a30cf8b0dbcbb4eb5fa",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "ZPhaqp5J0yPSpnEnE7JmlOva641U4hMaR2ND817Cpvk"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x303e3499759b4fa4c1da395fd0b0bada3d2618c41a85ebb46427c50886bbc520": {
+    "id": "did:iota:snd:0x303e3499759b4fa4c1da395fd0b0bada3d2618c41a85ebb46427c50886bbc520",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x303e3499759b4fa4c1da395fd0b0bada3d2618c41a85ebb46427c50886bbc520#key-1",
+        "controller": "did:iota:snd:0x303e3499759b4fa4c1da395fd0b0bada3d2618c41a85ebb46427c50886bbc520",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "rR7j2seonr3HsH0Z-7XGrFbKTq_lSCoQBJrN-OpBoPY"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xd1caa3f8edb149fed1516d9afac42444fa7dad65473b01f1000ef7b322737d74": {
+    "id": "did:iota:snd:0xd1caa3f8edb149fed1516d9afac42444fa7dad65473b01f1000ef7b322737d74",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xd1caa3f8edb149fed1516d9afac42444fa7dad65473b01f1000ef7b322737d74#key-1",
+        "controller": "did:iota:snd:0xd1caa3f8edb149fed1516d9afac42444fa7dad65473b01f1000ef7b322737d74",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "1sp-Dol0XwRFoQYdPiUWrKT-j5r0DErSempLPzde4tU"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x1628cddcc38d4073a1d964b8a125f5a520f1dd6be8df8665a42cf67f405b306b": {
+    "id": "did:iota:snd:0x1628cddcc38d4073a1d964b8a125f5a520f1dd6be8df8665a42cf67f405b306b",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x1628cddcc38d4073a1d964b8a125f5a520f1dd6be8df8665a42cf67f405b306b#key-1",
+        "controller": "did:iota:snd:0x1628cddcc38d4073a1d964b8a125f5a520f1dd6be8df8665a42cf67f405b306b",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "mEHQfkz7o8h-ylW5PADvHNQMG1OnROCIfpp6lKHigB0"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xf4dc3345c2e4ccd1aa398f277c94daaccd9153a872a9540094a634b1cc2d508b": {
+    "id": "did:iota:snd:0xf4dc3345c2e4ccd1aa398f277c94daaccd9153a872a9540094a634b1cc2d508b",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xf4dc3345c2e4ccd1aa398f277c94daaccd9153a872a9540094a634b1cc2d508b#key-1",
+        "controller": "did:iota:snd:0xf4dc3345c2e4ccd1aa398f277c94daaccd9153a872a9540094a634b1cc2d508b",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "KqqS3y2zaDm3YIZLWO5kp6qHY6kBN91vH6c_Hk5v5yg"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x0cda70d5dec5ef8c1604941eaa42027815808161c2c54f32713bde4346650255": {
+    "id": "did:iota:snd:0x0cda70d5dec5ef8c1604941eaa42027815808161c2c54f32713bde4346650255",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x0cda70d5dec5ef8c1604941eaa42027815808161c2c54f32713bde4346650255#key-1",
+        "controller": "did:iota:snd:0x0cda70d5dec5ef8c1604941eaa42027815808161c2c54f32713bde4346650255",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Lzz8Ndac2EPmMxZLhbfETk1qjQTOfylAJZN-f6D4msU"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xa656017365aca97782fb577542bb0c6412e6fc9ce99bd7ce46d2b7e3d39e8238": {
+    "id": "did:iota:snd:0xa656017365aca97782fb577542bb0c6412e6fc9ce99bd7ce46d2b7e3d39e8238",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xa656017365aca97782fb577542bb0c6412e6fc9ce99bd7ce46d2b7e3d39e8238#key-1",
+        "controller": "did:iota:snd:0xa656017365aca97782fb577542bb0c6412e6fc9ce99bd7ce46d2b7e3d39e8238",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "fQlZYbCbib2osofTmPBDR7kxoWwKB2KqlhsuDpDy5zg"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x71d70caf5c3e44e7c1c59c91bec7c7b59c94c706ba9830ebe59a78fadf5c9bb4": {
+    "id": "did:iota:snd:0x71d70caf5c3e44e7c1c59c91bec7c7b59c94c706ba9830ebe59a78fadf5c9bb4",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x71d70caf5c3e44e7c1c59c91bec7c7b59c94c706ba9830ebe59a78fadf5c9bb4#key-1",
+        "controller": "did:iota:snd:0x71d70caf5c3e44e7c1c59c91bec7c7b59c94c706ba9830ebe59a78fadf5c9bb4",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "6o_thFmKS1Xfv31tURIWG_XZ7vURGh-Mf38EmWDPmwk"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xfeca204b5a02be654f9aec3a3673881d6627e16b95594caad58d0386f112ec0f": {
+    "id": "did:iota:snd:0xfeca204b5a02be654f9aec3a3673881d6627e16b95594caad58d0386f112ec0f",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xfeca204b5a02be654f9aec3a3673881d6627e16b95594caad58d0386f112ec0f#key-1",
+        "controller": "did:iota:snd:0xfeca204b5a02be654f9aec3a3673881d6627e16b95594caad58d0386f112ec0f",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "kccwOFqFdrTrjSSHhGRApw5uhuHtqaAbpXIeFD17C-A"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x0337ceb8ce279dd4fbe47c467c7d96283230e6099dd33f05c64287100902f6cf": {
+    "id": "did:iota:snd:0x0337ceb8ce279dd4fbe47c467c7d96283230e6099dd33f05c64287100902f6cf",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x0337ceb8ce279dd4fbe47c467c7d96283230e6099dd33f05c64287100902f6cf#key-1",
+        "controller": "did:iota:snd:0x0337ceb8ce279dd4fbe47c467c7d96283230e6099dd33f05c64287100902f6cf",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "qbkwLYQNB5NeumHQp9MdXNe-xqqYX0fNst5Vb_I_UHo"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x5ba46f87c3763be3080b56d29c774d7f8d9e2b4d2dbc8d32a314aad457aa0f4a": {
+    "id": "did:iota:snd:0x5ba46f87c3763be3080b56d29c774d7f8d9e2b4d2dbc8d32a314aad457aa0f4a",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x5ba46f87c3763be3080b56d29c774d7f8d9e2b4d2dbc8d32a314aad457aa0f4a#key-1",
+        "controller": "did:iota:snd:0x5ba46f87c3763be3080b56d29c774d7f8d9e2b4d2dbc8d32a314aad457aa0f4a",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "tMhOSuVV3q5b_Te6I8Z0cU_JCqqErsVsGIT63pYyMWU"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x45dde0dd584d24a2ecaf3e40a603227957b650dfd75362bbcc7f30f106b408e2": {
+    "id": "did:iota:snd:0x45dde0dd584d24a2ecaf3e40a603227957b650dfd75362bbcc7f30f106b408e2",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x45dde0dd584d24a2ecaf3e40a603227957b650dfd75362bbcc7f30f106b408e2#key-1",
+        "controller": "did:iota:snd:0x45dde0dd584d24a2ecaf3e40a603227957b650dfd75362bbcc7f30f106b408e2",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "RxuGjuA4ja2oAu11UPNk9oE5ZgA-h5EDl9SvRMO-_As"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x12e487f94823901f9f8c5b9fccd99cdcdabf0d20679f7ca8b025b998acf653bc": {
+    "id": "did:iota:snd:0x12e487f94823901f9f8c5b9fccd99cdcdabf0d20679f7ca8b025b998acf653bc",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x12e487f94823901f9f8c5b9fccd99cdcdabf0d20679f7ca8b025b998acf653bc#key-1",
+        "controller": "did:iota:snd:0x12e487f94823901f9f8c5b9fccd99cdcdabf0d20679f7ca8b025b998acf653bc",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Z9Xg8__UHsnVuX3974g9GadPT9BtIDCY0jNfbAwj6dw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xb5b27287e0951bbf8517b2c7b80ecff7fae0428d23c82a046db5022746d41621": {
+    "id": "did:iota:snd:0xb5b27287e0951bbf8517b2c7b80ecff7fae0428d23c82a046db5022746d41621",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xb5b27287e0951bbf8517b2c7b80ecff7fae0428d23c82a046db5022746d41621#key-1",
+        "controller": "did:iota:snd:0xb5b27287e0951bbf8517b2c7b80ecff7fae0428d23c82a046db5022746d41621",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "qkDmLjOmbDWBZSMYMKhEzAVF7nYvIIBdu77pbxbvb3k"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xefa7de8159a5315b83475e98a7adc32cab244478ed020e757b3db9ec1b2601ba": {
+    "id": "did:iota:snd:0xefa7de8159a5315b83475e98a7adc32cab244478ed020e757b3db9ec1b2601ba",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xefa7de8159a5315b83475e98a7adc32cab244478ed020e757b3db9ec1b2601ba#key-1",
+        "controller": "did:iota:snd:0xefa7de8159a5315b83475e98a7adc32cab244478ed020e757b3db9ec1b2601ba",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "L2Mppi8KiYAYBZsY-171O1fiBQIBhKqaacUfc86YuxM"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x75a5b991664c1dd2f53439e75480826eb05fc4fb281f60b2602b89e889175c81": {
+    "id": "did:iota:snd:0x75a5b991664c1dd2f53439e75480826eb05fc4fb281f60b2602b89e889175c81",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x75a5b991664c1dd2f53439e75480826eb05fc4fb281f60b2602b89e889175c81#key-1",
+        "controller": "did:iota:snd:0x75a5b991664c1dd2f53439e75480826eb05fc4fb281f60b2602b89e889175c81",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "7dKxh7Gm9R4UI-hGRaKVE6BTO6QpZbMPZRodd1MXjPw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x3ca560228e45970db58aa88c6ce441b6c3953c068d03a8d86900b6d77d87c975": {
+    "id": "did:iota:snd:0x3ca560228e45970db58aa88c6ce441b6c3953c068d03a8d86900b6d77d87c975",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x3ca560228e45970db58aa88c6ce441b6c3953c068d03a8d86900b6d77d87c975#key-1",
+        "controller": "did:iota:snd:0x3ca560228e45970db58aa88c6ce441b6c3953c068d03a8d86900b6d77d87c975",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "7nr3c4s1BokvUT5eBCwZhBL1HsuryZimsjYL5ARYbLs"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x44b107bffba670cc0f703dbf4741e9e1f6f3e2fc04c5b5d68e17adbede563ee8": {
+    "id": "did:iota:snd:0x44b107bffba670cc0f703dbf4741e9e1f6f3e2fc04c5b5d68e17adbede563ee8",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x44b107bffba670cc0f703dbf4741e9e1f6f3e2fc04c5b5d68e17adbede563ee8#key-1",
+        "controller": "did:iota:snd:0x44b107bffba670cc0f703dbf4741e9e1f6f3e2fc04c5b5d68e17adbede563ee8",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "jLv9tTjvVR82TQoyYg-MIBFIaWF4n2aMxtJQ1KVC7oM"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x5a180b809c8714244cac7719e4331bf0e6c23ec413246faf39617732d4e94579": {
+    "id": "did:iota:snd:0x5a180b809c8714244cac7719e4331bf0e6c23ec413246faf39617732d4e94579",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x5a180b809c8714244cac7719e4331bf0e6c23ec413246faf39617732d4e94579#key-1",
+        "controller": "did:iota:snd:0x5a180b809c8714244cac7719e4331bf0e6c23ec413246faf39617732d4e94579",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "ArhFKs9_byxR2IxTPY1Y7P-s7WO7BCp3MvFuZfG1F8M"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x19ec2a03cb3e51da29b3c12c2b8a10ec5874348db0ee044964d0d97a8663ed3e": {
+    "id": "did:iota:snd:0x19ec2a03cb3e51da29b3c12c2b8a10ec5874348db0ee044964d0d97a8663ed3e",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x19ec2a03cb3e51da29b3c12c2b8a10ec5874348db0ee044964d0d97a8663ed3e#key-1",
+        "controller": "did:iota:snd:0x19ec2a03cb3e51da29b3c12c2b8a10ec5874348db0ee044964d0d97a8663ed3e",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "kSdEqzYDidM1_agCHM9o_WSv69UutseG-auc5fyw3kw"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x9869537565ac817b02a5b8f6f5a1a6d77daac78def6003fd763e1a7f34718e61": {
+    "id": "did:iota:snd:0x9869537565ac817b02a5b8f6f5a1a6d77daac78def6003fd763e1a7f34718e61",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x9869537565ac817b02a5b8f6f5a1a6d77daac78def6003fd763e1a7f34718e61#key-1",
+        "controller": "did:iota:snd:0x9869537565ac817b02a5b8f6f5a1a6d77daac78def6003fd763e1a7f34718e61",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "Q4RNo4j3I84X9ZgJQNvhglyIqi03cy6OzeDIiVZ2xM4"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x59babcdada65df51ca780309e1a3b7108b5ce1a6840aa849779cb49c9c1ac11f": {
+    "id": "did:iota:snd:0x59babcdada65df51ca780309e1a3b7108b5ce1a6840aa849779cb49c9c1ac11f",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x59babcdada65df51ca780309e1a3b7108b5ce1a6840aa849779cb49c9c1ac11f#key-1",
+        "controller": "did:iota:snd:0x59babcdada65df51ca780309e1a3b7108b5ce1a6840aa849779cb49c9c1ac11f",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "_wpmkRK6jkzdfBeuNvz9oHUDTtVtD0a2gUKXNA5KLGc"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xf25eaea4c048ec1637246c1cbb4513c3116a56b7382699b42ab0987d07c397dd": {
+    "id": "did:iota:snd:0xf25eaea4c048ec1637246c1cbb4513c3116a56b7382699b42ab0987d07c397dd",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xf25eaea4c048ec1637246c1cbb4513c3116a56b7382699b42ab0987d07c397dd#key-1",
+        "controller": "did:iota:snd:0xf25eaea4c048ec1637246c1cbb4513c3116a56b7382699b42ab0987d07c397dd",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "QlYF1gLQNVEZk2lGQaRgYAkx77Ve5JXHH-OGyxPUP6Q"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x02dc7dad639cb6e0420868aca16dda4f4d65ce1d994faefdc7b5ad5172ca9d2c": {
+    "id": "did:iota:snd:0x02dc7dad639cb6e0420868aca16dda4f4d65ce1d994faefdc7b5ad5172ca9d2c",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x02dc7dad639cb6e0420868aca16dda4f4d65ce1d994faefdc7b5ad5172ca9d2c#key-1",
+        "controller": "did:iota:snd:0x02dc7dad639cb6e0420868aca16dda4f4d65ce1d994faefdc7b5ad5172ca9d2c",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "h_p0Dbqhos0OO1ySftzBc8fqgmBf5ueuy3KwaMBHF90"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xd91532dffd32b7032ab6363673ee182f80c37df220299e06e7aedd9b911171a3": {
+    "id": "did:iota:snd:0xd91532dffd32b7032ab6363673ee182f80c37df220299e06e7aedd9b911171a3",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xd91532dffd32b7032ab6363673ee182f80c37df220299e06e7aedd9b911171a3#key-1",
+        "controller": "did:iota:snd:0xd91532dffd32b7032ab6363673ee182f80c37df220299e06e7aedd9b911171a3",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "ih43lI8Z9eXDEvSwCfSHdtXumCVZpHz01fzLq4CdDc0"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xaaeae4507059b46282b7bb69dab56419d10e5e8f21a2c5c9111c248ff24d8c27": {
+    "id": "did:iota:snd:0xaaeae4507059b46282b7bb69dab56419d10e5e8f21a2c5c9111c248ff24d8c27",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xaaeae4507059b46282b7bb69dab56419d10e5e8f21a2c5c9111c248ff24d8c27#key-1",
+        "controller": "did:iota:snd:0xaaeae4507059b46282b7bb69dab56419d10e5e8f21a2c5c9111c248ff24d8c27",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "BsroQnyhJg0h3oT2Cl94QgteYuzlcHRwFvhp2GywYII"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0xbd08e9c0cf9f52bcf4a7390fb5b53166d3fe10300776b6b3631feaf089e5210c": {
+    "id": "did:iota:snd:0xbd08e9c0cf9f52bcf4a7390fb5b53166d3fe10300776b6b3631feaf089e5210c",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0xbd08e9c0cf9f52bcf4a7390fb5b53166d3fe10300776b6b3631feaf089e5210c#key-1",
+        "controller": "did:iota:snd:0xbd08e9c0cf9f52bcf4a7390fb5b53166d3fe10300776b6b3631feaf089e5210c",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "jdOaSO6rSibmERM9vU4G8zRnDwQr6Jn6AeWFr5ru-mM"
+        }
+      }
+    ]
+  },
+  "did:iota:snd:0x430cab59dded05e4bb8ba1b58b2021a10b2ff1b9eefbcbe0f3b115ee46ff2d43": {
+    "id": "did:iota:snd:0x430cab59dded05e4bb8ba1b58b2021a10b2ff1b9eefbcbe0f3b115ee46ff2d43",
+    "verificationMethod": [
+      {
+        "id": "did:iota:snd:0x430cab59dded05e4bb8ba1b58b2021a10b2ff1b9eefbcbe0f3b115ee46ff2d43#key-1",
+        "controller": "did:iota:snd:0x430cab59dded05e4bb8ba1b58b2021a10b2ff1b9eefbcbe0f3b115ee46ff2d43",
+        "type": "JsonWebKey2020",
+        "publicKeyJwk": {
+          "kty": "OKP",
+          "alg": "EdDSA",
+          "crv": "Ed25519",
+          "x": "5yhPFEbbnvf-aEsU2uMqG_VjzILI-fzYXw1JLmwlReg"
+        }
+      }
+    ]
+  }
+}

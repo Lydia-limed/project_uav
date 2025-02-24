@@ -1,0 +1,18 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Run Simulation and Display the Delay per Round\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import { testMultipleNodeConfigs } from './Simulation/time_vs_round.ts';\r\nimport { generateChart } from './Charts_Generation/t.ts';\r\nconst { Plotly } = require('node-kernel');\r\n\r\n(async () => {\r\n    // Run simulation with multiple node configurations\r\n    console.log(\"⏳ Running simulation...\");\r\n    const results = await testMultipleNodeConfigs();\r\n\r\n    // Display delay per round in the console\r\n    console.log(\"📊 Delay per round:\", results);\r\n\r\n    // Generate chart layout based on simulation results\r\n    const layout = await generateChart(results);\r\n\r\n    // Render the chart using Plotly\r\n    console.log(\"📈 Generating chart...\");\r\n    await Plotly.newPlot('myDiv', results, layout);\r\n\r\n    console.log(\"✅ Simulation completed.\");\r\n})();\r\n"
+            ],
+            "outputs": []
+        }
+    ]
+}

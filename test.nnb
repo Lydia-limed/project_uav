@@ -1,0 +1,32 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "\r\nconst { Plotly } = require('node-kernel');\r\nimport {testMultipleNodeConfigs} from \"./Simulation and Evaluation/Simulation/time_vs_round.ts\"\r\navgDelay = testMultipleNodeConfigs();\r\n// layout= generateChart(avgDelay);\r\n// Plotly.newPlot('myDiv', data, layout);"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
+            ],
+            "outputs": []
+        }
+    ]
+}
