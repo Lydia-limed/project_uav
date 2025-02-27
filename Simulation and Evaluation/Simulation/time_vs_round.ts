@@ -77,7 +77,7 @@ export async function testMultipleNodeConfigs(): Promise<number[]> {
         console.log(`📊 Overall average response time: ${overallAvgTime} ms`);
     }
 
-    return lastResult; // Retourne le résultat de la 5e exécution
+    return lastResult; 
 }
 testMultipleNodeConfigs()
 

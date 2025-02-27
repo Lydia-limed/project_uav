@@ -59,23 +59,26 @@ async function runMobileSimulation(numNodes: number): Promise<number[]> {
     return responseTimes;
 }
 
-/**
- * Run multiple simulations with different UAV configurations.
- * @returns {Promise<{ nodesConfig: number[], delays: number[] }>} - Object containing node configurations and delays.
- */
+
 export async function testMultipleNodeConfigs(): Promise<{ nodesConfig: number[], delays: number[] }> {
     const nodesConfig = [10, 20, 30, 40, 50];
     const delays: number[] = [];
 
     for (const numNodes of nodesConfig) {
-        const avgDelay = await runMobileSimulation(numNodes);
-        const avg = avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
-        delays.push(avg);
+        let totalDelay = 0;
 
+        for (let i = 0; i < 5; i++) {
+            const avgDelay: number[] = await runMobileSimulation(numNodes);
+            totalDelay += avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
+        }
+
+        const avg = totalDelay / 5; 
+        delays.push(avg);
         console.log(`✔️ ${numNodes} UAVs: ${avg.toFixed(2)} ms`);
     }
 
     return { nodesConfig, delays };
 }
+
 
 testMultipleNodeConfigs()

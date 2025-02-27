@@ -3,7 +3,14 @@
         {
             "language": "markdown",
             "source": [
-                "# Overall average response time"
+                "# Computational Cost (in ms)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Overall average response time"
             ],
             "outputs": []
         },
@@ -30,7 +37,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Run Simulation and Display the Delay per Round\r\n"
+                "## Run Simulation and Display the Delay per Round\r\n"
             ],
             "outputs": []
         },
@@ -68,7 +75,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Run Simulation and Display the Delay per Node Number Sequence"
+                "## Run Simulation and Display the Delay per Node Number Sequence"
             ],
             "outputs": []
         },
@@ -155,7 +162,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Run Simulation and Display the Delay per Node Number paral"
+                "## Run Simulation and Display the Delay per Node Number paral"
             ],
             "outputs": []
         },
@@ -255,7 +262,7 @@
         {
             "language": "markdown",
             "source": [
-                "# Run Simulation and Display the Delay per Did class\r\n"
+                "## Run Simulation and Display the Delay per Did class\r\n"
             ],
             "outputs": []
         },
@@ -369,7 +376,41 @@
         {
             "language": "typescript",
             "source": [
-                ""
+                "import {evaluateAuthentication} from '../Simulation and Evaluation/Evaluation/authentication_evaluation.ts';\r\nconst result = await evaluateAuthentication(did);\r\nconsole.log(result.communicationCost);              "
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "🔍 Evaluating authentication...",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Comparison with Existing Approaches"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Comparative Analysis of Computational Delay (bar chart)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Comparative Analysis of Communication Cost (bar chart)"
             ],
             "outputs": []
         }

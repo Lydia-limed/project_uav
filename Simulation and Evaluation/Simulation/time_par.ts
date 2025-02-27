@@ -84,23 +84,80 @@ async function runMobileSimulation(numNodes: number) {
 
 
 
-export async function testMultipleNodeConfigs(): Promise<{ nodesConfig: number[], delays: number[] }> {
-    const nodesConfig = [10, 20, 30, 40, 50];  // Different network sizes
-    console.log("🚀 Début des tests en parallèle avec différentes tailles de réseau...\n");
+// export async function testMultipleNodeConfigs(): Promise<{ nodesConfig: number[], delays: number[] }> {
+//     const nodesConfig = [10, 20, 30, 40, 50];  // Different network sizes
+//     console.log("🚀 Début des tests en parallèle avec différentes tailles de réseau...\n");
 
-    // 🔄 Lancer toutes les simulations en parallèle
-    const delays = await Promise.all(nodesConfig.map(async (numNodes) => {
-        console.log(`\n🔄 Lancement du test avec ${numNodes} UAVs...`);
-        const avgDelay = await runMobileSimulation(numNodes);
-        const avg = avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
-        console.log(`📊 Temps de réponse moyen pour ${numNodes} UAVs : ${avg.toFixed(2)} ms`);
-        return avg;
-    }));
+//     // 🔄 Lancer toutes les simulations en parallèle
+//     const delays = await Promise.all(nodesConfig.map(async (numNodes) => {
+//         console.log(`\n🔄 Lancement du test avec ${numNodes} UAVs...`);
+//         const avgDelay = await runMobileSimulation(numNodes);
+//         const avg = avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
+//         console.log(`📊 Temps de réponse moyen pour ${numNodes} UAVs : ${avg.toFixed(2)} ms`);
+//         return avg;
+//     }));
 
-    console.log("\n📊 Tous les tests sont terminés !");
+//     console.log("\n📊 Tous les tests sont terminés !");
     
-    return { nodesConfig, delays };  // Return delays instead of results
+//     return { nodesConfig, delays };  // Return delays instead of results
+// }
+// export async function testMultipleNodeConfigs(): Promise<{ nodesConfig: number[], delays: number[][] }> {
+//     const nodesConfig = [10, 20, 30, 40, 50];  // Différentes tailles de réseau
+//     let delays: number[][] = [];  // Stocker toutes les itérations
+
+//     console.log("🚀 Début des tests en parallèle avec différentes tailles de réseau...\n");
+
+//     for (let i = 0; i < 5; i++) {
+//         console.log(`\n🟢 Exécution de l'itération ${i + 1}/5...\n`);
+
+//         const iterationDelays = await Promise.all(nodesConfig.map(async (numNodes) => {
+//             console.log(`\n🔄 Lancement du test avec ${numNodes} UAVs...`);
+//             const avgDelay = await runMobileSimulation(numNodes);
+//             const avg = avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
+//             console.log(`📊 Temps de réponse moyen pour ${numNodes} UAVs : ${avg.toFixed(2)} ms`);
+//             return avg;
+//         }));
+//         if(i == 4){
+//         delays.push(iterationDelays);
+//      }
+//     }
+
+//     console.log("\n✅ Tous les tests sont terminés !");
+    
+//     return { nodesConfig, delays };
+// }
+export async function testMultipleNodeConfigs(): Promise<{ nodesConfig: number[], delays: number[] }> {
+    const nodesConfig = Array.from({ length: 50 }, (_, i) => i + 1); // Génère [1, 2, 3, ..., 50]
+    let delays: number[] = []; // Stocker la moyenne pour chaque configuration
+
+    console.log("🚀 Début des tests avec différentes tailles de réseau...\n");
+
+    for (const numNodes of nodesConfig) { // On teste chaque taille de réseau UNE PAR UNE
+        console.log(`\n🟢 Test pour ${numNodes} UAVs en cours (exécution de ${numNodes} simulations en parallèle)...`);
+
+        // Lancer exactement numNodes simulations en parallèle
+        const iterationDelays = await Promise.all(Array.from({ length: numNodes }, async () => {
+            const avgDelay = await runMobileSimulation(numNodes);
+            return avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
+        }));
+
+        // Moyenne des numNodes simulations
+        const avg = iterationDelays.reduce((sum, time) => sum + time, 0) / iterationDelays.length;
+        delays.push(avg);
+
+        console.log(`📊 Temps de réponse moyen pour ${numNodes} UAVs : ${avg.toFixed(2)} ms`);
+    }
+
+    console.log("\n✅ Tous les tests sont terminés !");
+    
+    return { nodesConfig, delays };
 }
 
-// Lancer la simulation
-testMultipleNodeConfigs();
+
+
+
+
+// Exécuter la fonction
+testMultipleNodeConfigs().then(results => console.log("\n📊 Résultats finaux :", results));
+
+
