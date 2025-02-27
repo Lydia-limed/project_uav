@@ -1,36 +1,26 @@
-import dns from 'dns';
 import Graph from 'graphology';
 import * as fs from 'fs';
 import * as path from 'path';
-
-
-// 🔄 Désactiver le cache DNS pour éviter une accélération des requêtes
-dns.setDefaultResultOrder('ipv4first');
-
-// 🗑️ Effacer le cache des modules
-// delete require.cache[require.resolve('../Evaluation/authentication_evaluation')];
 import { evaluateAuthentication } from '../Evaluation/authentication_evaluation';
 
-
-// Chemins des fichiers
+// File paths
 const GRAPH_DIR = path.join(__dirname, '../Graphs/graph_rounds');
 
-// Paramètres de simulation
+// Simulation parameters
 const NUM_ROUNDS = 10;
 
-
 /**
- * Charger un graphe depuis un fichier JSON en désactivant le cache FS
+ * Load a graph from a JSON file, ensuring no filesystem cache is used.
  */
 function loadGraphFromFile(graph: Graph, round: number) {
     const filePath = path.join(GRAPH_DIR, `graph_round_${round}.json`);
 
     if (!fs.existsSync(filePath)) {
-        console.error(`❌ Fichier ${filePath} introuvable !`);
+        console.error(`❌ File ${filePath} not found!`);
         process.exit(1);
     }
 
-    // 🔄 Lecture forcée pour éviter le cache du système de fichiers
+    // Force reading to avoid filesystem caching
     const graphData = JSON.parse(fs.readFileSync(filePath, { encoding: 'utf8', flag: 'r' }));
 
     graph.clear();
@@ -39,7 +29,7 @@ function loadGraphFromFile(graph: Graph, round: number) {
 }
 
 /**
- * Exécuter la simulation avec `numNodes` UAVs
+ * Run the simulation with `numNodes` UAVs.
  */
 async function runMobileSimulation(numNodes: number) {  
     let responseTimes: number[] = [];
@@ -63,7 +53,7 @@ async function runMobileSimulation(numNodes: number) {
                     roundTime += parseFloat(result.computationalDelay);
                 }
             } catch (error) {
-                console.error(`❌ Erreur lors de l'authentification du nœud ${node}:`, error);
+                console.error(`❌ Error during authentication of node ${node}:`, error);
             }
         }
 
@@ -71,40 +61,24 @@ async function runMobileSimulation(numNodes: number) {
     }
 
     const avgComputationalDelay = Number((responseTimes.reduce((sum, time) => sum + time, 0) / NUM_ROUNDS).toFixed(0));
-    console.log(`\n📊 Temps de réponse moyen pour ${numNodes} UAVs : ${avgComputationalDelay} ms`);
+    // console.log(`\n📊 Average response time for ${numNodes} UAVs: ${avgComputationalDelay} ms`);
 
-    // 🗑️ Forcer la libération de la mémoire après chaque run
-    // if (global.gc) global.gc();
+ 
 
     return responseTimes;
 }
 
-
-// export async function testMultipleNodeConfigs() {
-//     const avgDelay = await runMobileSimulation(50);
-//     console.log("📊 Délais moyens :");
-//     console.log("📊 Délais moyens :", avgDelay);
-//     // generateChart(avgDelay);
-//     return avgDelay;
-// }
-// Assure-toi que `runMobileSimulation` est bien importée ou définie avant !
 export async function testMultipleNodeConfigs(): Promise<number[]> {
-    console.log("🔄 Début de testMultipleNodeConfigs()...");
+    let lastResult: number[] = [];
 
-    try {
-        console.log("⏳ Lancement de runMobileSimulation...");
-        const avgDelay = await runMobileSimulation(3);
-        console.log("✅ runMobileSimulation terminé !");
-        console.log("📊 Délais moyens :", avgDelay);
-
-        return avgDelay;
-    } catch (error) {
-        console.error("❌ Erreur dans testMultipleNodeConfigs :", error);
-        throw error;
+    for (let i = 0; i < 5; i++) {
+        lastResult = await runMobileSimulation(50); 
+        const overallAvgTime = Number((lastResult.reduce((sum, time) => sum + time, 0) / lastResult.length).toFixed(2));
+        console.log(`📊 Overall average response time: ${overallAvgTime} ms`);
     }
+
+    return lastResult; // Retourne le résultat de la 5e exécution
 }
-
-
 testMultipleNodeConfigs()
 
 

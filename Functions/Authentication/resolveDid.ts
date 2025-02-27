@@ -45,8 +45,3 @@ export async function AuthenticateDID(did: string): Promise<{ authenticated: boo
     }
 }
 
-// // Exemple d'utilisation
-// const did = "did:iota:snd:0x681453155007fc1a9902bbedc4981bdde8d58671e676a5a5315f32c2fb8870f2"; // Remplacez par un DID valide
-// AuthenticateDID(did).then(result => {
-//     console.log("Résultat de la vérification :", result);
-// });

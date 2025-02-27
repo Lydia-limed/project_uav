@@ -3,6 +3,33 @@
         {
             "language": "markdown",
             "source": [
+                "# Overall average response time"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import { testMultipleNodeConfigs } from './Simulation/time_vs_round.ts';\r\n\r\n(async () => {\r\n    const results = await testMultipleNodeConfigs();\r\n    // Compute overall average response time\r\n    const overallAvgTime = Number((results.reduce((sum, time) => sum + time, 0) / results.length).toFixed(2));\r\n    console.log(`📊 Overall average response time: ${overallAvgTime} ms`);\r\n\r\n})();\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "📊 Overall average response time: 9.63 ms",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
                 "# Run Simulation and Display the Delay per Round\r\n"
             ],
             "outputs": []
@@ -10,7 +37,339 @@
         {
             "language": "typescript",
             "source": [
-                "import { testMultipleNodeConfigs } from './Simulation/time_vs_round.ts';\r\nimport { generateChart } from './Charts_Generation/t.ts';\r\nconst { Plotly } = require('node-kernel');\r\n\r\n(async () => {\r\n    // Run simulation with multiple node configurations\r\n    console.log(\"⏳ Running simulation...\");\r\n    const results = await testMultipleNodeConfigs();\r\n\r\n    // Display delay per round in the console\r\n    console.log(\"📊 Delay per round:\", results);\r\n\r\n    // Generate chart layout based on simulation results\r\n    const layout = await generateChart(results);\r\n\r\n    // Render the chart using Plotly\r\n    console.log(\"📈 Generating chart...\");\r\n    await Plotly.newPlot('myDiv', results, layout);\r\n\r\n    console.log(\"✅ Simulation completed.\");\r\n})();\r\n"
+                "import { testMultipleNodeConfigs } from './Simulation/time_vs_round.ts';\r\nimport { generateChart } from './Charts_Generation/Delay_Vs_round.ts';\r\nconst { Plotly } = require('node-kernel');\r\n\r\n(async () => {\r\n    // Run simulation with multiple node configurations\r\n    console.log(\"⏳ Running simulation...\");\r\n    const results = await testMultipleNodeConfigs();\r\n\r\n    // Display delay per round in the console\r\n    // console.log(\"📊 Delay per round:\", results);\r\n\r\n    // Compute overall average response time\r\n    const overallAvgTime = Number((results.reduce((sum, time) => sum + time, 0) / results.length).toFixed(0));\r\n    console.log(`📊 Overall average response time: ${overallAvgTime} ms`);\r\n\r\n    // Generate chart layout based on simulation results\r\n    const layout = await generateChart(results);\r\n\r\n    // Render the chart using Plotly\r\n    await Plotly.newPlot('myDiv', [], layout);\r\n\r\n    console.log(\"✅ Simulation completed.\");\r\n})();\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.error",
+                            "value": {
+                                "name": "TSError",
+                                "message": "⨯ Unable to compile TypeScript:\nEvaluation/authentication_evaluation.ts(1,10): error TS2305: Module '\"../../Functions/Authentication/resolveDid\"' has no exported member 'AuthenticateDID'.\r\n",
+                                "stack": "c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\dist\\index.js:317\n            throw error;\n            ^\n\n    at createTSError (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\src\\index.ts:750:12)\n    at reportTSError (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\src\\index.ts:754:19)\n    at getOutput (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\src\\index.ts:941:36)\n    at Object.compile (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\src\\index.ts:1243:30)\n    at Module.m._compile (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\src\\index.ts:1370:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\resources\\scripts\\node_modules\\ts-node\\src\\index.ts:1374:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function.<anonymous> (node:internal/modules/cjs/loader:1123:12)\n    at Function._._load (c:\\Users\\yahia\\.vscode\\extensions\\donjayamanne.typescript-notebook-2.0.6\\out\\extension\\server\\index.js:2:115372)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Run Simulation and Display the Delay per Node Number Sequence"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import { testMultipleNodeConfigs } from './Simulation/time_seq.ts';\r\nimport { generateChart } from './Charts_Generation/Delay_Vs_nodes_sequence.ts';\r\nconst { Plotly } = require('node-kernel');\r\n\r\n(async () => {\r\n    // Run simulation with multiple node configurations\r\n    console.log(\"⏳ Running simulation...\");\r\n    const results = await testMultipleNodeConfigs();\r\n\r\n    // Generate chart layout based on simulation results\r\n    const layout = await generateChart(results.nodesConfig, results.delays);\r\n\r\n    // Render the chart using Plotly\r\n    await Plotly.newPlot('myDiv', [], layout);\r\n\r\n    console.log(\"✅ Simulation completed.\");\r\n})();\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "⏳ Running simulation...",
+                                "✅ Image saved as 'c:\\Users\\yahia\\Desktop\\Projet uav\\iota-project\\Simulation and Evaluation\\Charts\\Delay_Vs_round.png'!",
+                                "✔️ Completed for 10 UAVs: 10.26 ms",
+                                "✔️ Completed for 20 UAVs: 10.02 ms",
+                                "✔️ Completed for 30 UAVs: 10.18 ms",
+                                "✔️ Completed for 40 UAVs: 10.41 ms",
+                                "✔️ Completed for 50 UAVs: 10.24 ms",
+                                "✅ Chart successfully saved as 'c:\\Users\\yahia\\Desktop\\Projet uav\\iota-project\\Simulation and Evaluation\\Charts\\Delay_Vs_nodes_sequence.png'!",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.ts.notebook.plotly+json",
+                            "value": {
+                                "requestId": "x6b599db583344d6e9fd3e9e0fb907210",
+                                "type": "generatePlot",
+                                "ele": "myDiv",
+                                "data": [],
+                                "layout": {
+                                    "images": [
+                                        {
+                                            "source": "https://quickchart.io/chart/render/zm-2308c161-9307-4b6e-b2a0-30a11ceb671c?labels=10,20,30,40,50&data1=10.261,10.017999999999999,10.175,10.413999999999998,10.236999999999998",
+                                            "x": 0,
+                                            "y": 1,
+                                            "sizex": 1,
+                                            "sizey": 1,
+                                            "xanchor": "left",
+                                            "xref": "paper",
+                                            "yanchor": "top",
+                                            "yref": "paper"
+                                        }
+                                    ],
+                                    "xaxis": {
+                                        "visible": false
+                                    },
+                                    "yaxis": {
+                                        "visible": false
+                                    },
+                                    "margin": {
+                                        "l": 0,
+                                        "r": 0,
+                                        "t": 0,
+                                        "b": 0
+                                    },
+                                    "height": 500,
+                                    "width": 800
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "✅ Simulation completed.",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Run Simulation and Display the Delay per Node Number paral"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import { testMultipleNodeConfigs } from './Simulation/time_par.ts';\r\nimport { generateChart } from './Charts_Generation/Delay_Vs_nodes_paral.ts';\r\nconst { Plotly } = require('node-kernel');\r\n\r\n(async () => {\r\n    // Run simulation with multiple node configurations\r\n    console.log(\"⏳ Running simulation...\");\r\n    const results = await testMultipleNodeConfigs();\r\n\r\n    // Generate chart layout based on simulation results\r\n    const layout = await generateChart(results.nodesConfig, results.delays);\r\n\r\n    // Render the chart using Plotly\r\n    await Plotly.newPlot('myDiv', [], layout);\r\n\r\n    console.log(\"✅ Simulation completed.\");\r\n})();\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "🚀 Début des tests en parallèle avec différentes tailles de réseau...",
+                                "",
+                                "⏳ Running simulation...",
+                                "🚀 Début des tests en parallèle avec différentes tailles de réseau...",
+                                "",
+                                "",
+                                "🔄 Lancement du test avec 10 UAVs...",
+                                "",
+                                "🔄 Lancement du test avec 50 UAVs...",
+                                "📊 Temps de réponse moyen pour 10 UAVs : 17.20 ms",
+                                "📊 Temps de réponse moyen pour 10 UAVs : 17.33 ms",
+                                "📊 Temps de réponse moyen pour 20 UAVs : 17.66 ms",
+                                "📊 Temps de réponse moyen pour 20 UAVs : 17.54 ms",
+                                "",
+                                "📊 Temps de réponse moyen pour 30 UAVs : 17 ms",
+                                "📊 Temps de réponse moyen pour 30 UAVs : 16.71 ms",
+                                "",
+                                "📊 Temps de réponse moyen pour 30 UAVs : 17 ms",
+                                "📊 Temps de réponse moyen pour 30 UAVs : 16.77 ms",
+                                "",
+                                "📊 Temps de réponse moyen pour 40 UAVs : 16 ms",
+                                "📊 Temps de réponse moyen pour 40 UAVs : 15.71 ms",
+                                "",
+                                "📊 Temps de réponse moyen pour 40 UAVs : 16 ms",
+                                "📊 Temps de réponse moyen pour 40 UAVs : 15.70 ms",
+                                "",
+                                "📊 Tous les tests sont terminés !",
+                                "📊 Temps de réponse moyen pour 50 UAVs : 14.33 ms",
+                                "",
+                                "📊 Tous les tests sont terminés !",
+                                "✅ Chart successfully saved as 'c:\\Users\\yahia\\Desktop\\Projet uav\\iota-project\\Simulation and Evaluation\\Charts\\Delay_Vs_nodes_paral.png'!",
+                                "✅ Simulation completed.",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.ts.notebook.plotly+json",
+                            "value": {
+                                "requestId": "xc79ab2d32f7f4596a275e2a2abd96792",
+                                "type": "generatePlot",
+                                "ele": "myDiv",
+                                "data": [],
+                                "layout": {
+                                    "images": [
+                                        {
+                                            "source": "https://quickchart.io/chart/render/zm-7019c829-2fe8-4ab2-935e-89817c568379?labels=10,20,30,40,50&data1=17.196,17.544999999999998,16.771,15.709999999999999,14.333000000000002",
+                                            "x": 0,
+                                            "y": 1,
+                                            "sizex": 1,
+                                            "sizey": 1,
+                                            "xanchor": "left",
+                                            "xref": "paper",
+                                            "yanchor": "top",
+                                            "yref": "paper"
+                                        }
+                                    ],
+                                    "xaxis": {
+                                        "visible": false
+                                    },
+                                    "yaxis": {
+                                        "visible": false
+                                    },
+                                    "margin": {
+                                        "l": 0,
+                                        "r": 0,
+                                        "t": 0,
+                                        "b": 0
+                                    },
+                                    "height": 500,
+                                    "width": 800
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Run Simulation and Display the Delay per Did class\r\n"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import { testMultipleNodeConfigs } from './Simulation/time_cat.ts';\r\nimport { generateChart } from './Charts_Generation/Delay_Vs_Class.ts';\r\nconst { Plotly } = require('node-kernel');\r\n\r\n(async () => {\r\n    // Run simulation with multiple node configurations\r\n    console.log(\"⏳ Running simulation...\");\r\n    const results = await testMultipleNodeConfigs();\r\n\r\n\r\n    const layout = await generateChart(results.activatedResponseTimes,results.deactivatedResponseTimes, results.nonAuthenticatedResponseTimes, 10);\r\n\r\n    // Render the chart using Plotly\r\n    await Plotly.newPlot('myDiv', [], layout);\r\n\r\n    console.log(\"✅ Simulation completed.\");\r\n})();\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "⏳ Running simulation...",
+                                "🔄 Round 1 started...",
+                                "⏳ Initializing first round...",
+                                "🔄 Round 2 started...",
+                                "🔄 Round 3 started...",
+                                "🔄 Round 4 started...",
+                                "🔄 Round 5 started...",
+                                "🔄 Round 6 started...",
+                                "🔄 Round 7 started...",
+                                "🔄 Round 8 started...",
+                                "🔄 Round 9 started...",
+                                "🔄 Round 10 started...",
+                                "📊 Average non-authenticated delays: [",
+                                "   9.69, 7.25,  8.42,  7.18,  6.85, 6.89,  6.76,  7.24, 7.03,",
+                                "  10.67, 7.53,     9,  9.29,  7.85, 8.19,  6.78,  6.86, 9.92,",
+                                "   7.17, 8.36,  7.63,  7.22,   6.7, 7.94,  6.97,  7.35, 7.16,",
+                                "   6.83, 8.38, 11.11, 11.71,  6.61, 6.76,  8.33,  6.85, 6.73,",
+                                "    6.9, 6.87,   6.9,  7.49,  6.64, 6.17,  9.43,  8.44, 6.85,",
+                                "   7.63,    7,  7.24,  6.96,  6.94, 8.82,  6.97, 10.62,    9,",
+                                "   7.25, 7.02,  6.94,  9.33,  6.44, 6.75, 11.52,  7.18, 7.54,",
+                                "   9.91, 8.69,  6.77,  7.47,  7.13, 7.05,  8.96,  9.24, 6.67,",
+                                "   7.11, 7.31, 11.39,  8.45, 10.27, 6.64,  6.79,  6.87, 6.82,",
+                                "   6.66, 6.85,  8.35,   6.8, 11.64, 7.08,  7.18,  7.06,  9.6,",
+                                "   6.89, 8.99,  7.01,   9.6,   6.2, 8.62,  7.68, 10.09, 6.97,",
+                                "   7.01,",
+                                "  ... 50 more items",
+                                "]",
+                                "✅ Chart successfully saved as 'c:\\Users\\yahia\\Desktop\\Projet uav\\iota-project\\Simulation and Evaluation\\Charts\\Delay_Vs_class.png'!",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.ts.notebook.plotly+json",
+                            "value": {
+                                "requestId": "xe3495795692d4b8aae3176b46200edda",
+                                "type": "generatePlot",
+                                "ele": "myDiv",
+                                "data": [],
+                                "layout": {
+                                    "images": [
+                                        {
+                                            "source": "https://quickchart.io/chart/render/zm-49b569dd-c670-4243-b529-9a39f15abdb7?labels=Round 1,Round 2,Round 3,Round 4,Round 5,Round 6,Round 7,Round 8,Round 9,Round 10&data1=9.94,10.78,9.92,9.49,10.4,9.57,10.96,10.27,9.74,14.04,9.73,10.83,10.78,11.42,16.24,9.61,9.46,10.51,9.68,11.6,9.74,11.84,10.22,9.88,9.73,9.71,9.74,12.68,9.79,15.78,10.17,12.41,10.55,9.67,9.89,11.04,10.46,9.63,9.57,9.39,9.29,13.33,9.7,9.59,10.66,10.53,9.17,10.33,14.52,9.59,9.53,9.57,9.54,10.61,11.94,10.26,10.9,9.76,15.76,11.17,9.29,11.17,9.46,10.25,10.18,9.87,10.75,9.58,10.71,10.58,10.87,9.83,9.68,9.59,9.08,10.39,9.9,9.54,14.54,9.9,10.58,9.59,9.33,11.6,9.62,10.22,13.83,12.4,9.88,9.63,9.65,9.65,9.63,9.37,10.3,10.16,10.8,9.68,11.54,10.79,9.63,12.11,9.63,12.53,9.7,10.59,9.16,9.21,11.38,11.26,9.81,12.34,9.61,9.75,8.84,9.66,10.08,9.46,10.59,11.23,11.2,11.25,9.43,14.49,9.45,10.83,11.79,9.23,9.33,9.94,9,12.24,9.68,14.68,9.52,12.61,9.49,10.25,12.18,10.35,9.63,9.4,12.05,11.83,9.42,10.56,11.46,10.79,12.44,9.38,9.48,9.52,9.57,9.84,10.22,9.88,9.59,12.13,9.29,12.92,12.12,8.92,9.34,10.05,9.25,9.22,10.95,11.41,10.58,9.73,9.59,13.34,11.88,9.58,12.44,10.3,11.65,9.88,14.71,11.13&data2=9.23,9.73,11.32,12.63,10.27,10.47,10.46,10.86,10.06,14.86,10.1,10.32,9.75,9.67,10.26,10.01,10.52,9.95,16.11,9.13,9.02,13.57,9.22,9.44,9.24,9.8,12.81,9.7,10.36,9.58,9.5,13.95,9.58,12.58,9.56,9.6,9.77,9.73,9.64,9.42,9.26,12.4,9.53,11.88,9.81,12.22,10.17,11.78,10.39,10.77,10.61,9.91,9.5,10.82,11.05,14.38,10.95,16.59,11.77,10.79,11.58,9.58,11.89,11.66,11.13,11.82,10.25,9.18,9.35,9.51,12.03,9.9,10.24,11.97,9.38,10.08,10.15,9.6,9.41,9.79,14.52,9.15,11.58,9.63,9.97,11.13,9.28,10.4,9.47,13.63,11.86,10.18,12.44,9.73,10.25,13.43,9.99,9.6,10.86,9.37,12.69,9.08,9.23,10.11,12.48,17.88,12.56,9.87,9.26,9.53,9.72,12.56,9.31,9.16,9.06,9.39,10.06,11.54,9.65,9.49,10.19,9.82,9.41,9.73,9.87,10.26,9.18,12.01,10.39,10.13,9.55,13.23,10.24,9.29,9.12,9.81,8.77,11.35,11.44,10.56,10.38,10.8,10.84,12.9,11,9.43,12.16,9.27,12.77,9.29,9.96,12.56,10.53,9.96,9.69,10.29,8.96,11.85,10.43,9.01,10.25,12.85,10.52,9.46,9.59,9.52,9.03,13.55,11.91,13.28&data3=9.69,7.25,8.42,7.18,6.85,6.89,6.76,7.24,7.03,10.67,7.53,9,9.29,7.85,8.19,6.78,6.86,9.92,7.17,8.36,7.63,7.22,6.7,7.94,6.97,7.35,7.16,6.83,8.38,11.11,11.71,6.61,6.76,8.33,6.85,6.73,6.9,6.87,6.9,7.49,6.64,6.17,9.43,8.44,6.85,7.63,7,7.24,6.96,6.94,8.82,6.97,10.62,9,7.25,7.02,6.94,9.33,6.44,6.75,11.52,7.18,7.54,9.91,8.69,6.77,7.47,7.13,7.05,8.96,9.24,6.67,7.11,7.31,11.39,8.45,10.27,6.64,6.79,6.87,6.82,6.66,6.85,8.35,6.8,11.64,7.08,7.18,7.06,9.6,6.89,8.99,7.01,9.6,6.2,8.62,7.68,10.09,6.97,7.01,12.33,10.54,6.68,6.97,10.04,6.99,6.62,12.34,7.09,11.97,7.07,7.38,6.39,6.71,6.91,7.12,6.96,9.56,6.83,6.87,7.68,7.07,8.19,11.42,8.11,7.38,7.47,10.59,6.89,7.01,6.97,9.99,6.68,8.28,10.25,7,7.24,7.36,6.96,16.98,12.46,7.12,7.15,7.98,7.57,9.34,7.06,7.83,7.23,6.71",
+                                            "x": 0,
+                                            "y": 1,
+                                            "sizex": 1,
+                                            "sizey": 1,
+                                            "xanchor": "left",
+                                            "xref": "paper",
+                                            "yanchor": "top",
+                                            "yref": "paper"
+                                        }
+                                    ],
+                                    "xaxis": {
+                                        "visible": false
+                                    },
+                                    "yaxis": {
+                                        "visible": false
+                                    },
+                                    "margin": {
+                                        "l": 0,
+                                        "r": 0,
+                                        "t": 0,
+                                        "b": 0
+                                    },
+                                    "height": 500,
+                                    "width": 800
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "✅ Simulation completed.",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "# Communication Cost (in bytes)"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                ""
             ],
             "outputs": []
         }

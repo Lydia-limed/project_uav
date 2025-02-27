@@ -84,13 +84,12 @@ async function runMobileSimulation(numNodes: number) {
 
 
 
-
-async function testMultipleNodeConfigs() {
-    const nodesConfig = [10,20,30,40,50];  // Différentes tailles de réseau
+export async function testMultipleNodeConfigs(): Promise<{ nodesConfig: number[], delays: number[] }> {
+    const nodesConfig = [10, 20, 30, 40, 50];  // Different network sizes
     console.log("🚀 Début des tests en parallèle avec différentes tailles de réseau...\n");
 
     // 🔄 Lancer toutes les simulations en parallèle
-    const results = await Promise.all(nodesConfig.map(async (numNodes) => {
+    const delays = await Promise.all(nodesConfig.map(async (numNodes) => {
         console.log(`\n🔄 Lancement du test avec ${numNodes} UAVs...`);
         const avgDelay = await runMobileSimulation(numNodes);
         const avg = avgDelay.reduce((sum, time) => sum + time, 0) / avgDelay.length;
@@ -100,8 +99,7 @@ async function testMultipleNodeConfigs() {
 
     console.log("\n📊 Tous les tests sont terminés !");
     
-    // ✅ Générer le graphique avec les résultats
-    generateChart(nodesConfig, results);
+    return { nodesConfig, delays };  // Return delays instead of results
 }
 
 // Lancer la simulation

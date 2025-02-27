@@ -1,43 +1,72 @@
-import QuickChart from 'quickchart-js';
 import fs from 'fs';
+import path from 'path';
 import axios from 'axios';
 
+const QUICKCHART_BASE_URL = "https://quickchart.io/chart/render/zm-7317b21f-5fcd-4054-9c67-2e9e6928bcab";
 
 export async function generateChart(nodes: number[], delays: number[]) {
-    // 🔹 Configurer le graphique
-    const chart = new QuickChart();
-    chart.setConfig({
-        type: 'line',
-        data: {
-            labels: nodes.map(n => `${n}`), // Axe X : Nombre de nœuds
-            datasets: [
-                {
-                    label: 'Average Computational Delay (ms)',
-                    data: delays,
-                    borderColor: 'green',
-                    backgroundColor: 'rgba(0, 255, 0, 0.3)',
-                    fill: true
-                }
-            ]
-        },
-        options: {
-            scales: {
-                y: { title: { display: true, text: 'Computational Delay (ms)' } },
-                x: { title: { display: true, text: 'Number of Nodes (UAVs)' } }
-            }
+    if (!nodes || nodes.length === 0 || !delays || delays.length === 0) {
+        console.error("❌ Error: No data provided for the chart!");
+        return null;
+    }
+
+    // ✅ Generate the chart URL
+    const labels = nodes.join(",");
+    const data = delays.join(",");
+    const chartUrl = `${QUICKCHART_BASE_URL}?labels=${labels}&data1=${data}`;
+
+    // ✅ Define the save path
+    const saveDir = path.join(process.cwd(), 'Charts');
+    const savePath = path.join(saveDir, 'Delay_Vs_nodes_sequence.png');
+
+    let layout = null;
+
+    try {
+        // ✅ Ensure the directory exists
+        if (!fs.existsSync(saveDir)) {
+            fs.mkdirSync(saveDir, { recursive: true });
+            console.log(`📂 Directory created: ${saveDir}`);
         }
-    });
 
-    const imageUrl = chart.getUrl(); // 🔗 URL de l'image
+        // ✅ Download the chart image
+     
+        const response = await axios({ url: chartUrl, responseType: 'stream' });
 
+        const writer = fs.createWriteStream(savePath);
+        response.data.pipe(writer);
 
-    // 🔹 Télécharger l'image
-    const response = await axios({
-        url: imageUrl,
-        responseType: 'stream',
-    });
+        // ✅ Ensure the image is fully saved before continuing
+        await new Promise<void>((resolve, reject) => {
+            writer.on('finish', () => resolve()); // ✅ Now correctly typed
+            writer.on('error', (err) => reject(err));
+        });
 
-    const writer = fs.createWriteStream('Delay_Vs_nodes_sequence.png');
-    response.data.pipe(writer);
-    writer.on('error', (err) => console.error("❌ Erreur lors du téléchargement :", err));
+        console.log(`✅ Chart successfully saved as '${savePath}'!`);
+
+        // ✅ Assign layout only after the image is successfully saved
+        layout = {
+            images: [{
+                source: chartUrl,
+                x: 0,
+                y: 1,
+                sizex: 1,
+                sizey: 1,
+                xanchor: "left",
+                xref: "paper",
+                yanchor: "top",
+                yref: "paper"
+            }],
+            xaxis: { visible: false },
+            yaxis: { visible: false },
+            margin: { l: 0, r: 0, t: 0, b: 0 },
+            height: 500,
+            width: 800
+        };
+
+    } catch (error) {
+        console.error("❌ Error retrieving or saving the image:", error);
+        return null;
+    }
+
+    return layout;
 }
